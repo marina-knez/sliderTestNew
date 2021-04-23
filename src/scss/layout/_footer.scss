@@ -1,0 +1,21 @@
+.footer {
+    height: 100px;
+    width: 941px;
+    float: left;
+    margin: 0 0 0 205px;
+
+    #{&}-content {
+        height: 100px;
+        width: 941px;
+        border-radius: 5px 5px 0 0;
+        background-color: map-get($colors, --clr-neutral, 200);
+    }
+}
+
+.footer-text {
+    height: 18px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    padding: 42px 615px 40px 81px;
+    margin-top: 30px;
+}

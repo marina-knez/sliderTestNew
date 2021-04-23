@@ -1,0 +1,46 @@
+.arrows {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: left;
+    top: 14.7rem;
+    left: -12.5rem;
+    width: 60px;
+    height: 130px;
+
+    &-left, &-right {
+        box-sizing: border-box;
+        height: 60px;
+        width: 60px;
+        margin: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .prev, .next {
+        padding: 22px 24px;
+        border: 1px solid map-get($colors, --clr-neutral, 200);
+        border-radius: 5px;
+
+        &:hover {
+            display: none;
+        }
+    }
+
+    .prev-blue, .next-blue {
+        padding: 22px 24px;
+        position: relative;
+        top: 0rem;
+        border: 1px solid map-get($colors, --clr-accent);
+        border-radius: 5px;
+        display: none;
+    }
+
+    .prev:hover + .prev-blue {
+        display: block;
+    }
+
+    .next:hover + .next-blue {
+        display: block;
+    }
+}

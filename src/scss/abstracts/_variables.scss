@@ -1,0 +1,13 @@
+$font1: 'Source Sans Pro', sans-serif;
+$font2: 'Open Sans', sans-serif;
+
+$colors: (
+    --clr-accent: rgba(19,72,128,1),
+    --clr-neutral: (
+        100: rgba(255,255,255,1),
+        200: rgba(221,221,221,1),
+        300: rgba(218,218,218,1),
+        400: rgba(72,74,76,1),
+        500: rgba(0,0,0,1)
+    )
+);

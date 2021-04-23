@@ -1,0 +1,32 @@
+.header {
+    height: 100px;
+    width: 941px;
+    position: relative;
+    top: 0;
+    display: inline;
+
+    #{&}-left, #{&}-right {
+        height: 100px;
+        background-color: map-get($colors, --clr-neutral, 200);
+        border-radius: 0 0 5px 5px;
+        float: left;
+        margin: 0 0 30px 0;
+    }
+
+    #{&}-left {
+        width: 301px;
+        margin-left: 205px;
+    }
+
+    #{&}-right {
+        width: 621px;
+        margin-left: 19px;
+    }
+}
+
+.text {
+    height: 18px;
+    line-height: 18px;
+    padding: 40px 0px 43px 82px;
+    letter-spacing: 0.4px;
+}
